@@ -23,4 +23,5 @@ const remove = (id) => {
     .then(() => console.log(`Person with id ${id} deleted`))
 }
 
+
 export default {getAll, create, update, remove}

@@ -21,7 +21,17 @@ const addPatient = (patient: Omit<Patient, 'id'>) => {
   return newPatientData;
 };
 
+// const addEntries = (id: string, entry: Entry) => {
+//   const patient = patientsData.find(patient => patient.id === id);
+//   patient.entries.push()
+// }
+
+const getPatient = (id: string) => {
+  return patientsData.find(patient => patient.id === id)
+}
+
 export default {
   getPatients,
-  addPatient
+  addPatient,
+  getPatient
 };
